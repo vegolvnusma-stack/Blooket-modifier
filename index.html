@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooket Tool Installer</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px 20px; background-color: #f7fafc; color: #2d3748; }
+        .box { background: white; max-width: 500px; margin: 0 auto; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .btn { display: inline-block; background-color: #3182ce; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 18px; margin: 20px 0; }
+        p { line-height: 1.5; color: #4a5568; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Blooket Dashboard Installer</h1>
+        <p>To install this tool on your iPad, drag the blue button below into your Favorites bar, or add this page as a bookmark and replace its URL with the code inside the button.</p>
+        
+        <a class="btn" href="javascript:(function(){const existing=document.getElementById('blooket-planner-widget');if(existing){existing.remove();return;}const div=document.createElement('div');div.id='blooket-planner-widget';div.style.position='fixed';div.style.top='20px';div.style.right='20px';div.style.width='320px';div.style.backgroundColor='#fff';div.style.boxShadow='0 4px 15px rgba(0,0,0,0.3)';div.style.borderRadius='12px';div.style.padding='20px';div.style.zIndex='999999';div.style.fontFamily='sans-serif';div.style.color='#333';div.innerHTML=`<h3 style='margin-top:0;color:#2b6cb0;text-align:center;'>Blooket Planner Dashboard</h3><div style='margin-bottom:10px;'><label style='display:block;font-size:12px;font-weight:bold;'>Current Tokens:</label><input type='number' id='b-tokens' value='100' style='width:100%;padding:6px;box-sizing:border-box;'></div><div style='margin-bottom:10px;'><label style='display:block;font-size:12px;font-weight:bold;'>Target Box Cost:</label><select id='b-box' style='width:100%;padding:6px;'><option value='25'>Medieval/Space (25)</option><option value='20'>Aquatic (20)</option><option value='15'>Safari/Bot (15)</option></select></div><div style='margin-bottom:10px;'><label style='display:block;font-size:12px;font-weight:bold;'>Boxes Wanted:</label><input type='number' id='b-count' value='10' style='width:100%;padding:6px;box-sizing:border-box;'></div><button id='b-calc' style='width:100%;background:#3182ce;color:#fff;border:none;padding:8px;border-radius:4px;font-weight:bold;cursor:pointer;'>Calculate</button><div id='b-res' style='margin-top:12px;font-size:13px;display:none;background:#ebf8ff;padding:8px;border-radius:4px;'></div><button id='b-close' style='margin-top:8px;width:100%;background:#e53e3e;color:#fff;border:none;padding:5px;border-radius:4px;font-size:11px;cursor:pointer;'>Close Dashboard</button>`;document.body.appendChild(div);document.getElementById('b-calc').onclick=function(){const t=parseInt(document.getElementById('b-tokens').value)||0;const cost=parseInt(document.getElementById('b-box').value);const count=parseInt(document.getElementById('b-count').value)||1;const total=cost*count;const rem=Math.max(0,total-t);const games=Math.ceil(rem/25);const days=Math.ceil(rem/500);const res=document.getElementById('b-res');res.innerHTML=`<b>Total Needed:</b> ${total} tokens<br><b>Tokens Left to Grind:</b> ${rem}<br><b>Est. Matches:</b> ${games}<br><b>Days (500 cap):</b> ${days}`;res.style.display='block';};document.getElementById('b-close').onclick=function(){div.remove();};})();">🧮 Blooket Dashboard</a>
+        
+        <p style="font-size: 12px; color: #a0aec0;">Once saved, navigate to Blooket and tap the bookmark to load the layout panels.</p>
+    </div>
+</body>
+</html>
